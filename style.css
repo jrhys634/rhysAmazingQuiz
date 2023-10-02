@@ -1,0 +1,117 @@
+/* Resets */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+
+/* Basic Styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.quiz__title {
+    letter-spacing: -0.05ch;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+}
+
+.bttn {
+    background: none;
+    padding: 0.5rem 0.7rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: aquamarine;
+    font-family: 'Quicksand', sans-serif;
+    transform: all 0.3s;
+}
+
+.bttn:hover {
+    background-color: darkblue;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.display {
+    font-size: 1.5rem;
+    max-width: 60ch;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+}
+
+.section {
+    border: 1px dashed gray;
+    padding: 0.5rem;
+}
+
+
+
+
+
+
+
+.trademark {
+    margin-top: 10rem;
+    font-size: 0.8rem;
+    color: grey;
+    font-family: 'Quicksand', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+/* Media Queries */
+/* .container {
+    max-width: 1536px;
+    margin-inline: auto;
+    padding-inline: auto;
+} */
+
+/* LG */
+@media (max-width: 1024px){
+    .quiz__title {
+        font-size: 3rem;
+    }
+}
+
+/* MD */
+@media (max-width: 768px){
+    .quiz__title {
+        font-size: 2.5rem;
+    }
+
+}
+
+/* SM */
+@media (max-width: 640px){
+    .quiz__title {
+        font-size: 2rem;
+    }
+}
+
+/* XS */
+@media (max-width: 340px){
+    .quiz__title {
+        font-size: 1.5rem;
+    }
+}
+
